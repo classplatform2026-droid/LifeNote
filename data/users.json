@@ -1,0 +1,41 @@
+[
+  {
+    "_id": "doc_8ww0no6fp_1792396122819",
+    "createdAt": "2026-10-19T07:48:42.819Z",
+    "updatedAt": "2026-10-19T07:48:42.819Z",
+    "name": "LangTest",
+    "email": "langtest_1792396122582@example.com",
+    "password": "$2b$10$80j9KlSN8M0gPtRzboicJ.EuaVoD8zGJdHbQhAHajsn32S1NxdSym",
+    "preferences": {
+      "theme": "light",
+      "readingFont": "serif",
+      "bookCover": "leather"
+    }
+  },
+  {
+    "_id": "doc_l0ee4t83g_1792323980363",
+    "createdAt": "2026-10-18T11:46:20.363Z",
+    "updatedAt": "2026-10-18T11:46:20.363Z",
+    "name": "Tester",
+    "email": "test_ai@example.com",
+    "password": "$2b$10$s.35Z.wI6qeR2e1mJc24POUUH61ufQwOi1CWp6kmnfOVwIHxfZCPK",
+    "preferences": {
+      "theme": "light",
+      "readingFont": "serif",
+      "bookCover": "leather"
+    }
+  },
+  {
+    "_id": "doc_6lcwgx4bz_1792321953370",
+    "createdAt": "2026-10-18T11:12:33.370Z",
+    "updatedAt": "2026-10-19T07:42:07.574Z",
+    "name": "Julian Vance",
+    "email": "demo@lifenote.ai",
+    "password": "$2b$10$VBb9SOZut6UFdBhlQt.zVO2C55l8K9gGs9RNGyWZH40PI9Xz6MsOK",
+    "preferences": {
+      "theme": "light",
+      "readingFont": "serif",
+      "bookCover": "leather"
+    }
+  }
+]

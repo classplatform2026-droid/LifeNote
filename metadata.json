@@ -1,0 +1,6 @@
+{
+  "name": "LifeNote AI",
+  "description": "A premium personal life organizer and AI writing workspace with Bookshelf, Diary, Ideas, Milestones, and Notebooks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

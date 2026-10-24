@@ -1,0 +1,74 @@
+[
+  {
+    "_id": "doc_m065brje5_1792396122820",
+    "createdAt": "2026-10-19T07:48:42.820Z",
+    "updatedAt": "2026-10-19T07:48:42.820Z",
+    "userId": "doc_8ww0no6fp_1792396122819",
+    "title": "Modular Thought Garden",
+    "description": "A personal knowledge repository connecting journal reflections with actionable project milestones through semantic associations.",
+    "category": "Creative",
+    "status": "In Progress",
+    "tags": [
+      "Knowledge",
+      "Systems",
+      "Design"
+    ],
+    "notes": "Key questions: How to preserve zero-friction drafting while providing deep structured retrieval?"
+  },
+  {
+    "_id": "doc_hlygdxfz0_1792395507191",
+    "createdAt": "2026-10-19T07:38:27.191Z",
+    "updatedAt": "2026-10-19T07:38:46.400Z",
+    "userId": "doc_6lcwgx4bz_1792321953370",
+    "title": "SafeRoute: Integrated School Bus Management & Real-Time Tracking Ecosystem",
+    "description": "SafeRoute is a dual-interface mobile ecosystem designed to bridge the communication gap between school bus operators, drivers, and parents. By providing real-time GPS tracking for parents and a streamlined route management dashboard for drivers, the platform ensures student safety, optimizes fuel efficiency, and provides peace of mind through automated arrival notifications.",
+    "category": "Creative",
+    "status": "In Progress",
+    "tags": [],
+    "notes": "https://www.facebook.com/share/r/1HyP9MNoMz/\n\n--- AI DEVELOPMENT ---\nFocus on low-latency data transmission to ensure the map updates in real-time. Consider integrating an SOS button for emergencies and an attendance logging feature (via QR or NFC) to ensure every student is accounted for during boarding and de-boarding. Ensure compliance with local data privacy regulations regarding student information.\n\nCore Pillars:\n- Real-time GPS Tracking and Geo-fencing\n- Automated Parent-Driver Communication Loop\n- Operational Efficiency for Fleet Management\n- Enhanced Child Safety Protocols\n\nAction Steps:\n- Conduct a market survey with local schools to identify pain points in current transport logistics.\n- Develop a Minimum Viable Product (MVP) focusing on basic GPS tracking and push notifications.\n- Draft a pilot program proposal for a single school to test the system in a controlled environment.\n- Design the UI/UX wireframes tailored specifically for both non-technical parents and busy drivers."
+  },
+  {
+    "_id": "doc_linawoiiw_1792323980364",
+    "createdAt": "2026-10-18T11:46:20.364Z",
+    "updatedAt": "2026-10-18T11:46:20.364Z",
+    "userId": "doc_l0ee4t83g_1792323980363",
+    "title": "Modular Thought Garden",
+    "description": "A personal knowledge repository connecting journal reflections with actionable project milestones through semantic associations.",
+    "category": "Creative",
+    "status": "In Progress",
+    "tags": [
+      "Knowledge",
+      "Systems",
+      "Design"
+    ],
+    "notes": "Key questions: How to preserve zero-friction drafting while providing deep structured retrieval?"
+  },
+  {
+    "_id": "doc_g1l6c54zk_1792322561724",
+    "createdAt": "2026-10-18T11:22:41.724Z",
+    "updatedAt": "2026-10-18T11:37:46.092Z",
+    "userId": "doc_6lcwgx4bz_1792321953370",
+    "title": "ডেলিভারি",
+    "description": "A clarified synthesis establishing a clarified synthesis establishing যারা যারা তাদের নিয়ে চিন্তায় তাদের জন্য একটি প্ল্যাটফর্ম তৈরি করা হবে. designed to balance zero-friction capture with long-term execution fidelity. Designed to balance zero-friction capture with long-term execution fidelity.",
+    "category": "Creative",
+    "status": "In Progress",
+    "tags": [],
+    "notes": "### Original Notes\n### Core Strategic Pillars\n- Foundational Architecture & Problem Scope\n- Tactical Execution & Phased Milestones\n- Value Delivery & Measurable Impact\n- Long-Term Extensibility & Refinement\n\n### Next Action Steps\n- [ ] Formalize the core requirements and non-negotiables for \"ডেলিভারি\".\n- [ ] Establish prototype boundaries or an initial working proof-of-concept.\n- [ ] Gather targeted feedback on feasibility and edge cases.\n- [ ] Refine the implementation roadmap with scheduled delivery dates.\n\n### Strategic Synthesis\nFocus Area: Rapid validation followed by systematic hardening.\nKey Invariant: Ensure every feature directly supports the central premise.\n\n\n### Core Strategic Pillars\n- Foundational Architecture & Problem Scope\n- Tactical Execution & Phased Milestones\n- Value Delivery & Measurable Impact\n- Long-Term Extensibility & Refinement\n\n### Next Action Steps\n- [ ] Formalize the core requirements and non-negotiables for \"ডেলিভারি\".\n- [ ] Establish prototype boundaries or an initial working proof-of-concept.\n- [ ] Gather targeted feedback on feasibility and edge cases.\n- [ ] Refine the implementation roadmap with scheduled delivery dates.\n\n### Strategic Synthesis\nFocus Area: Rapid validation followed by systematic hardening.\nKey Invariant: Ensure every feature directly supports the central premise.\nOriginal context preserved: ### Core Strategic Pillars\n- Foundational Architecture & Problem Scope\n- Tactical Execution & Phased Milestones\n- Value Delivery & Measurable Impact\n- Long-Term Extensibility & Refinement\n\n### Next Action Steps\n- [ ] Formalize the core requirements and non-negotiables for \"ডেলিভারি\".\n- [ ] Establish prototype boundaries or an initial working proof-of-concept.\n- [ ] Gather targeted feedback on feasibility and edge cases.\n- [ ] Refine the implementation roadmap with scheduled delivery dates.\n\n### Strategic Synthesis\nFocus Area: Rapid validation followed by systematic hardening.\nKey Invariant: Ensure every feature directly supports the central premise.\n"
+  },
+  {
+    "_id": "doc_sqovpfpwz_1792321953371",
+    "createdAt": "2026-10-18T11:12:33.371Z",
+    "updatedAt": "2026-10-18T11:25:01.937Z",
+    "userId": "doc_6lcwgx4bz_1792321953370",
+    "title": "Modular Thought Garden",
+    "description": "A clarified synthesis establishing a personal knowledge repository connecting journal reflections with actionable project milestones through semantic associations. Designed to balance zero-friction capture with long-term execution fidelity.",
+    "category": "Creative",
+    "status": "In Progress",
+    "tags": [
+      "Knowledge",
+      "Systems",
+      "Design"
+    ],
+    "notes": "### Original Notes\nKey questions: How to preserve zero-friction drafting while providing deep structured retrieval?\n\n### Core Strategic Pillars\n- Foundational Architecture & Problem Scope\n- Tactical Execution & Phased Milestones\n- Value Delivery & Measurable Impact\n- Long-Term Extensibility & Refinement\n\n### Next Action Steps\n- [ ] Formalize the core requirements and non-negotiables for \"Modular Thought Garden\".\n- [ ] Establish prototype boundaries or an initial working proof-of-concept.\n- [ ] Gather targeted feedback on feasibility and edge cases.\n- [ ] Refine the implementation roadmap with scheduled delivery dates.\n\n### Strategic Synthesis\nFocus Area: Rapid validation followed by systematic hardening.\nKey Invariant: Ensure every feature directly supports the central premise.\nOriginal context preserved: Key questions: How to preserve zero-friction drafting while providing deep structured retrieval?"
+  }
+]

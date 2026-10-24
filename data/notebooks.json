@@ -1,0 +1,46 @@
+[
+  {
+    "_id": "doc_izqwksb0s_1792396122820",
+    "createdAt": "2026-10-19T07:48:42.820Z",
+    "updatedAt": "2026-10-19T07:48:42.820Z",
+    "userId": "doc_8ww0no6fp_1792396122819",
+    "title": "Meditations & Craft",
+    "description": "Personal philosophy, creative architecture, and core principles.",
+    "category": "Philosophy",
+    "coverStyle": "leather",
+    "color": "#1e293b"
+  },
+  {
+    "_id": "doc_byhnf0tmf_1792323980364",
+    "createdAt": "2026-10-18T11:46:20.364Z",
+    "updatedAt": "2026-10-18T11:46:20.364Z",
+    "userId": "doc_l0ee4t83g_1792323980363",
+    "title": "Meditations & Craft",
+    "description": "Personal philosophy, creative architecture, and core principles.",
+    "category": "Philosophy",
+    "coverStyle": "leather",
+    "color": "#1e293b"
+  },
+  {
+    "_id": "doc_vdp2fg3w7_1792322759136",
+    "createdAt": "2026-10-18T11:25:59.136Z",
+    "updatedAt": "2026-10-19T07:46:39.102Z",
+    "userId": "doc_6lcwgx4bz_1792321953370",
+    "title": "Abs",
+    "description": "Ok",
+    "category": "General",
+    "coverStyle": "leather",
+    "color": "#1a1a1a"
+  },
+  {
+    "_id": "doc_3ywkk98tp_1792321953371",
+    "createdAt": "2026-10-18T11:12:33.371Z",
+    "updatedAt": "2026-10-18T11:12:33.371Z",
+    "userId": "doc_6lcwgx4bz_1792321953370",
+    "title": "Meditations & Craft",
+    "description": "Personal philosophy, creative architecture, and core principles.",
+    "category": "Philosophy",
+    "coverStyle": "leather",
+    "color": "#1e293b"
+  }
+]

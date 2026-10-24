@@ -1,0 +1,326 @@
+[
+  {
+    "_id": "doc_k5kd5jr2y_1792396122820",
+    "createdAt": "2026-10-19T07:48:42.820Z",
+    "updatedAt": "2026-10-19T07:48:42.820Z",
+    "userId": "doc_8ww0no6fp_1792396122819",
+    "title": "Publish First Essay Collection",
+    "description": "Curate, edit, and bind a 5-part reflective monograph on modern craft and focus.",
+    "category": "Creative",
+    "priority": "High",
+    "deadline": "2026-11-18",
+    "status": "Active",
+    "progress": 50,
+    "tasks": [
+      {
+        "id": "task_1",
+        "title": "Outline core thesis and 5 chapter themes",
+        "completed": true,
+        "dueDate": "2026-10-19"
+      },
+      {
+        "id": "task_2",
+        "title": "Draft chapter 1: The Still Mind",
+        "completed": true,
+        "dueDate": "2026-10-19"
+      },
+      {
+        "id": "task_3",
+        "title": "Draft chapter 2: Tools of Conviction",
+        "completed": false,
+        "dueDate": "2026-11-18"
+      },
+      {
+        "id": "task_4",
+        "title": "Final line edit and typographic typesetting",
+        "completed": false,
+        "dueDate": "2026-11-18"
+      }
+    ]
+  },
+  {
+    "_id": "doc_fkazx0u4o_1792323980364",
+    "createdAt": "2026-10-18T11:46:20.364Z",
+    "updatedAt": "2026-10-18T11:46:20.364Z",
+    "userId": "doc_l0ee4t83g_1792323980363",
+    "title": "Publish First Essay Collection",
+    "description": "Curate, edit, and bind a 5-part reflective monograph on modern craft and focus.",
+    "category": "Creative",
+    "priority": "High",
+    "deadline": "2026-11-17",
+    "status": "Active",
+    "progress": 50,
+    "tasks": [
+      {
+        "id": "task_1",
+        "title": "Outline core thesis and 5 chapter themes",
+        "completed": true,
+        "dueDate": "2026-10-18"
+      },
+      {
+        "id": "task_2",
+        "title": "Draft chapter 1: The Still Mind",
+        "completed": true,
+        "dueDate": "2026-10-18"
+      },
+      {
+        "id": "task_3",
+        "title": "Draft chapter 2: Tools of Conviction",
+        "completed": false,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_4",
+        "title": "Final line edit and typographic typesetting",
+        "completed": false,
+        "dueDate": "2026-11-17"
+      }
+    ]
+  },
+  {
+    "_id": "doc_wvbzjxzak_1792323676628",
+    "createdAt": "2026-10-18T11:41:16.628Z",
+    "updatedAt": "2026-10-19T07:44:11.383Z",
+    "userId": "doc_6lcwgx4bz_1792321953370",
+    "title": "Java sika",
+    "description": "Vlovabe java sikbo",
+    "category": "Career",
+    "priority": "Medium",
+    "deadline": "2026-11-17",
+    "status": "Active",
+    "tasks": [
+      {
+        "id": "task_q13mtk8",
+        "title": "Establish core environment and complete fundamental Java syntax modules",
+        "completed": false,
+        "dueDate": "2025-05-17"
+      },
+      {
+        "id": "task_wggfzrw",
+        "title": "Master Object-Oriented Programming (OOP) principles and data structures",
+        "completed": false,
+        "dueDate": "2025-12-17"
+      },
+      {
+        "id": "task_m69j74z",
+        "title": "Develop and document a functional Java-based application project",
+        "completed": false,
+        "dueDate": "2026-06-17"
+      },
+      {
+        "id": "task_1aa1xqc",
+        "title": "Refactor code for performance optimization and implement unit testing",
+        "completed": false,
+        "dueDate": "2026-09-17"
+      },
+      {
+        "id": "task_h63xw7d",
+        "title": "Finalize portfolio documentation and prepare for professional deployment",
+        "completed": false,
+        "dueDate": "2026-11-10"
+      },
+      {
+        "id": "task_txeu7qw",
+        "title": "Complete Java SE syntax and environment setup",
+        "completed": false,
+        "dueDate": "2025-05-17"
+      },
+      {
+        "id": "task_08q3w2p",
+        "title": "Master OOP principles and core data structures",
+        "completed": false,
+        "dueDate": "2025-12-17"
+      },
+      {
+        "id": "task_veosd8b",
+        "title": "Develop and document a functional Java-based application",
+        "completed": false,
+        "dueDate": "2026-06-17"
+      },
+      {
+        "id": "task_pynea8k",
+        "title": "Implement unit testing and perform code refactoring",
+        "completed": false,
+        "dueDate": "2026-09-17"
+      },
+      {
+        "id": "task_xz6i9x2",
+        "title": "Finalize portfolio documentation and professional deployment",
+        "completed": false,
+        "dueDate": "2026-11-17"
+      }
+    ],
+    "progress": 0
+  },
+  {
+    "_id": "doc_3q5n9mo8c_1792321953371",
+    "createdAt": "2026-10-18T11:12:33.371Z",
+    "updatedAt": "2026-10-19T07:44:59.062Z",
+    "userId": "doc_6lcwgx4bz_1792321953370",
+    "title": "Publish First Essay Collection",
+    "description": "Curate, edit, and bind a 5-part reflective monograph on modern craft and focus.",
+    "category": "Creative",
+    "priority": "High",
+    "deadline": "2026-11-17",
+    "status": "Active",
+    "progress": 81,
+    "tasks": [
+      {
+        "id": "task_1",
+        "title": "Outline core thesis and 5 chapter themes",
+        "completed": true,
+        "dueDate": "2026-10-18"
+      },
+      {
+        "id": "task_2",
+        "title": "Draft chapter 1: The Still Mind",
+        "completed": true,
+        "dueDate": "2026-10-18"
+      },
+      {
+        "id": "task_3",
+        "title": "Draft chapter 2: Tools of Conviction",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_4",
+        "title": "Final line edit and typographic typesetting",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_h65docr",
+        "title": "Phase 1: Define success criteria and assemble foundational resources for Publish First Essay Collection",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_yhoh10h",
+        "title": "Phase 2: Execute initial draft and primary core deliverable",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_2amfhvs",
+        "title": "Phase 3: Conduct thorough review, stress test, and qualitative polish",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_q84cite",
+        "title": "Phase 4: Final verification, packaging, and milestone sign-off",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_6o17wxs",
+        "title": "Phase 1: Define success criteria and assemble foundational resources for Publish First Essay Collection",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_qhl19sn",
+        "title": "Phase 2: Execute initial draft and primary core deliverable",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_dqgfjtj",
+        "title": "Phase 3: Conduct thorough review, stress test, and qualitative polish",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_e2eida8",
+        "title": "Phase 4: Final verification, packaging, and milestone sign-off",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_l25946o",
+        "title": "Phase 1: Define success criteria and assemble foundational resources for Publish First Essay Collection",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_y9ka4ww",
+        "title": "Phase 2: Execute initial draft and primary core deliverable",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_aor1u2f",
+        "title": "Phase 3: Conduct thorough review, stress test, and qualitative polish",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_x4pnhjx",
+        "title": "Phase 4: Final verification, packaging, and milestone sign-off",
+        "completed": true,
+        "dueDate": "2026-11-17"
+      },
+      {
+        "id": "task_8zubtbr",
+        "title": "Draft remaining three chapters: Friction, Sacred Repetition, and The Artifact",
+        "completed": true,
+        "dueDate": "2026-03-15"
+      },
+      {
+        "id": "task_mq1i6bc",
+        "title": "Conduct developmental edit and narrative synthesis across all five essays",
+        "completed": true,
+        "dueDate": "2026-05-30"
+      },
+      {
+        "id": "task_y2vf8mb",
+        "title": "Design book layout, interior typography, and cover jacket with print specialist",
+        "completed": true,
+        "dueDate": "2026-08-15"
+      },
+      {
+        "id": "task_qdntj1i",
+        "title": "Produce advance reader copy and complete formal proofreading pass",
+        "completed": true,
+        "dueDate": "2026-09-30"
+      },
+      {
+        "id": "task_dx5k6oc",
+        "title": "Coordinate fine-press printing, binding, and final monograph fulfillment",
+        "completed": true,
+        "dueDate": "2026-11-10"
+      },
+      {
+        "id": "task_r4ei560",
+        "title": "Finalize core thesis and complete full manuscript drafts for all five chapters",
+        "completed": false,
+        "dueDate": "2025-06-01"
+      },
+      {
+        "id": "task_usfjt6i",
+        "title": "Perform developmental edit and narrative synthesis to ensure thematic cohesion",
+        "completed": false,
+        "dueDate": "2025-12-01"
+      },
+      {
+        "id": "task_ulxtw0l",
+        "title": "Complete interior typography, book layout design, and cover jacket artwork",
+        "completed": false,
+        "dueDate": "2026-05-01"
+      },
+      {
+        "id": "task_b2je0kr",
+        "title": "Conduct formal proofreading and produce advance reader copies for final stress testing",
+        "completed": false,
+        "dueDate": "2026-08-01"
+      },
+      {
+        "id": "task_pdmqb40",
+        "title": "Coordinate fine-press printing, binding, and final monograph fulfillment",
+        "completed": false,
+        "dueDate": "2026-11-10"
+      }
+    ]
+  }
+]
