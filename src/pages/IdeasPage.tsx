@@ -82,6 +82,10 @@ export const IdeasPage: React.FC = () => {
   };
 
   useEffect(() => {
+    document.title = 'Concepts & Ideas | LifeNote AI';
+  }, []);
+
+  useEffect(() => {
     fetchIdeas();
   }, [categoryFilter, statusFilter, search]);
 

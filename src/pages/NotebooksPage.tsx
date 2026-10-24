@@ -84,6 +84,7 @@ export const NotebooksPage: React.FC = () => {
   };
 
   useEffect(() => {
+    document.title = 'Notebooks & Manuscripts | LifeNote AI';
     fetchNotebooks();
   }, []);
 

@@ -4,8 +4,8 @@
  */
 
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext.tsx';
-import { NavigationTab } from './types/index.ts';
 import { Navigation } from './components/Navigation.tsx';
 import { BookshelfPage } from './pages/BookshelfPage.tsx';
 import { DiaryPage } from './pages/DiaryPage.tsx';
@@ -13,12 +13,12 @@ import { IdeasPage } from './pages/IdeasPage.tsx';
 import { MilestonePage } from './pages/MilestonePage.tsx';
 import { NotebooksPage } from './pages/NotebooksPage.tsx';
 import { SettingsPage } from './pages/SettingsPage.tsx';
+import { NotFoundPage } from './pages/NotFoundPage.tsx';
 import { AuthModal } from './components/AuthModal.tsx';
 import { BookOpen } from 'lucide-react';
 
-function AppContent() {
+function AppLayout() {
   const { user, loading } = useAuth();
-  const [currentTab, setCurrentTab] = useState<NavigationTab>('bookshelf');
   const [authModalOpen, setAuthModalOpen] = useState<boolean>(false);
 
   // Apply theme to document root
@@ -53,18 +53,25 @@ function AppContent() {
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 dark:bg-neutral-950 dark:text-neutral-100 flex flex-col transition-colors selection:bg-neutral-900 selection:text-white">
       {/* Primary Navigation (Desktop Top Bar + Mobile Fixed 6-Tab Bottom Bar) */}
-      <Navigation currentTab={currentTab} onSelectTab={setCurrentTab} />
+      <Navigation />
 
-      {/* Main View Area */}
+      {/* Main Routed View Area */}
       <main className="flex-1 w-full">
-        {currentTab === 'bookshelf' && <BookshelfPage onNavigate={setCurrentTab} />}
-        {currentTab === 'diary' && <DiaryPage />}
-        {currentTab === 'ideas' && <IdeasPage />}
-        {currentTab === 'milestone' && <MilestonePage />}
-        {currentTab === 'notebooks' && <NotebooksPage />}
-        {currentTab === 'settings' && (
-          <SettingsPage onOpenAuthModal={() => setAuthModalOpen(true)} />
-        )}
+        <Routes>
+          <Route path="/" element={<Navigate to="/bookshelf" replace />} />
+          <Route path="/bookshelf" element={<BookshelfPage />} />
+          <Route path="/diary" element={<DiaryPage />} />
+          <Route path="/ideas" element={<IdeasPage />} />
+          <Route path="/milestone" element={<MilestonePage />} />
+          <Route path="/milestones" element={<Navigate to="/milestone" replace />} />
+          <Route path="/notebooks" element={<NotebooksPage />} />
+          <Route
+            path="/settings"
+            element={<SettingsPage onOpenAuthModal={() => setAuthModalOpen(true)} />}
+          />
+          {/* Proper 404 Not Found Page */}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </main>
 
       {/* Account Sign In / Switch Modal */}
@@ -79,7 +86,9 @@ function AppContent() {
 export default function App() {
   return (
     <AuthProvider>
-      <AppContent />
+      <BrowserRouter>
+        <AppLayout />
+      </BrowserRouter>
     </AuthProvider>
   );
 }

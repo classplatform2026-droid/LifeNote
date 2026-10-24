@@ -47,6 +47,10 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({ onOpenAuthModal }) =
     user?.preferences?.bookCover || 'leather'
   );
 
+  React.useEffect(() => {
+    document.title = 'Settings & Preferences | LifeNote AI';
+  }, []);
+
   // Sync form states whenever user object updates from auth
   React.useEffect(() => {
     if (user?.name) setName(user.name);

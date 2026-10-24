@@ -3,13 +3,22 @@ import { api } from '../lib/api.ts';
 import { Notebook, DiaryEntry, NavigationTab } from '../types/index.ts';
 import { BookCoverCard } from '../components/BookCoverCard.tsx';
 import { ReadingMode } from '../components/ReadingMode.tsx';
+import { useNavigate } from 'react-router-dom';
 import { BookOpen, Sparkles, Filter, RefreshCw, ArrowRight } from 'lucide-react';
 
 interface BookshelfPageProps {
-  onNavigate: (tab: NavigationTab) => void;
+  onNavigate?: (tab: NavigationTab) => void;
 }
 
 export const BookshelfPage: React.FC<BookshelfPageProps> = ({ onNavigate }) => {
+  const routerNavigate = useNavigate();
+  const handleNav = (tab: NavigationTab) => {
+    if (onNavigate) {
+      onNavigate(tab);
+    } else {
+      routerNavigate(`/${tab}`);
+    }
+  };
   const [notebooks, setNotebooks] = useState<Notebook[]>([]);
   const [diaryEntries, setDiaryEntries] = useState<DiaryEntry[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -41,6 +50,7 @@ export const BookshelfPage: React.FC<BookshelfPageProps> = ({ onNavigate }) => {
   };
 
   useEffect(() => {
+    document.title = 'The Bookshelf | LifeNote AI';
     fetchData();
   }, []);
 
@@ -66,16 +76,6 @@ export const BookshelfPage: React.FC<BookshelfPageProps> = ({ onNavigate }) => {
       category: 'Journal',
       type: 'diary',
       items: diaryEntries,
-    });
-  };
-
-  const openSingleDiaryEntry = (entry: DiaryEntry) => {
-    setReadingBook({
-      title: entry.title,
-      subtitle: entry.date,
-      category: 'Diary Entry',
-      type: 'diary',
-      items: [entry],
     });
   };
 
@@ -122,7 +122,7 @@ export const BookshelfPage: React.FC<BookshelfPageProps> = ({ onNavigate }) => {
                 : 'text-neutral-600 dark:text-neutral-400 hover:text-neutral-900'
             }`}
           >
-            Diary ({diaryEntries.length})
+            Diary ({diaryEntries.length > 0 ? 1 : 0})
           </button>
         </div>
       </div>
@@ -149,13 +149,13 @@ export const BookshelfPage: React.FC<BookshelfPageProps> = ({ onNavigate }) => {
           </p>
           <div className="flex items-center justify-center gap-2">
             <button
-              onClick={() => onNavigate('diary')}
+              onClick={() => handleNav('diary')}
               className="px-3 py-1.5 text-xs font-medium bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 rounded-lg"
             >
               Write in Diary
             </button>
             <button
-              onClick={() => onNavigate('notebooks')}
+              onClick={() => handleNav('notebooks')}
               className="px-3 py-1.5 text-xs font-medium border border-neutral-300 dark:border-neutral-700 rounded-lg hover:bg-neutral-100"
             >
               New Notebook
@@ -186,33 +186,18 @@ export const BookshelfPage: React.FC<BookshelfPageProps> = ({ onNavigate }) => {
                 </button>
               </div>
 
-              {/* Shelf row */}
+              {/* Shelf row: Only the single Master Diary volume, not individual pages */}
               <div className="relative pb-3 border-b-4 border-neutral-300 dark:border-neutral-800">
                 <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-                  {/* Master Diary Tome */}
                   <BookCoverCard
                     title="Chronicles of Self"
-                    subtitle="Full Diary"
-                    coverStyle="linen"
-                    category="Volume"
+                    subtitle="Personal Diary"
+                    coverStyle={diaryEntries[0]?.coverStyle || 'linen'}
+                    category="Journal"
                     itemCount={diaryEntries.length}
                     itemType="diary"
                     onClick={openDiaryBook}
                   />
-
-                  {/* Individual recent diary entries as mini-volumes */}
-                  {diaryEntries.slice(0, 5).map((entry) => (
-                    <BookCoverCard
-                      key={entry._id}
-                      title={entry.title}
-                      subtitle={entry.date}
-                      coverStyle={entry.coverStyle || 'leather'}
-                      category="Entry"
-                      itemCount={1}
-                      itemType="diary"
-                      onClick={() => openSingleDiaryEntry(entry)}
-                    />
-                  ))}
                 </div>
               </div>
             </div>

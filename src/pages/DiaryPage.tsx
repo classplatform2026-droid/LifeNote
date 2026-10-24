@@ -75,6 +75,10 @@ export const DiaryPage: React.FC = () => {
   };
 
   useEffect(() => {
+    document.title = 'Diary & Reflections | LifeNote AI';
+  }, []);
+
+  useEffect(() => {
     fetchEntries();
   }, [search, filterDate]);
 

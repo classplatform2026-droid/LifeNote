@@ -82,6 +82,10 @@ export const MilestonePage: React.FC = () => {
   };
 
   useEffect(() => {
+    document.title = 'Milestones & Goals | LifeNote AI';
+  }, []);
+
+  useEffect(() => {
     fetchGoals();
   }, [categoryFilter, priorityFilter, statusFilter, search, sortBy]);
 

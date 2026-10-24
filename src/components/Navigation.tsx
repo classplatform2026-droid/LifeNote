@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import {
   BookOpen,
   CalendarDays,
@@ -10,26 +11,45 @@ import {
 import { NavigationTab } from '../types/index.ts';
 
 interface NavigationProps {
-  currentTab: NavigationTab;
-  onSelectTab: (tab: NavigationTab) => void;
+  currentTab?: NavigationTab;
+  onSelectTab?: (tab: NavigationTab) => void;
 }
 
 interface NavItem {
   key: NavigationTab;
   label: string;
+  path: string;
   icon: React.ComponentType<{ className?: string }>;
 }
 
 const NAV_ITEMS: NavItem[] = [
-  { key: 'bookshelf', label: 'Bookshelf', icon: BookOpen },
-  { key: 'diary', label: 'Diary', icon: CalendarDays },
-  { key: 'ideas', label: 'Ideas', icon: Lightbulb },
-  { key: 'milestone', label: 'Milestone', icon: Target },
-  { key: 'notebooks', label: 'Notebooks', icon: BookMarked },
-  { key: 'settings', label: 'Settings', icon: Settings },
+  { key: 'bookshelf', label: 'Bookshelf', path: '/bookshelf', icon: BookOpen },
+  { key: 'diary', label: 'Diary', path: '/diary', icon: CalendarDays },
+  { key: 'ideas', label: 'Ideas', path: '/ideas', icon: Lightbulb },
+  { key: 'milestone', label: 'Milestone', path: '/milestone', icon: Target },
+  { key: 'notebooks', label: 'Notebooks', path: '/notebooks', icon: BookMarked },
+  { key: 'settings', label: 'Settings', path: '/settings', icon: Settings },
 ];
 
 export const Navigation: React.FC<NavigationProps> = ({ currentTab, onSelectTab }) => {
+  const location = useLocation();
+
+  const isItemActive = (item: NavItem) => {
+    if (currentTab) {
+      return currentTab === item.key;
+    }
+    if (item.key === 'bookshelf') {
+      return location.pathname === '/' || location.pathname === '/bookshelf';
+    }
+    return location.pathname.startsWith(item.path);
+  };
+
+  const handleItemClick = (key: NavigationTab) => {
+    if (onSelectTab) {
+      onSelectTab(key);
+    }
+  };
+
   return (
     <>
       {/* Fixed Bottom Navigation Bar - Exactly 6 items as strictly required */}
@@ -41,26 +61,26 @@ export const Navigation: React.FC<NavigationProps> = ({ currentTab, onSelectTab 
           <div className="grid grid-cols-6 items-center h-16">
             {NAV_ITEMS.map((item) => {
               const Icon = item.icon;
-              const isActive = currentTab === item.key;
+              const active = isItemActive(item);
               return (
-                <button
+                <Link
                   key={item.key}
-                  type="button"
-                  onClick={() => onSelectTab(item.key)}
+                  to={item.path}
+                  onClick={() => handleItemClick(item.key)}
                   className={`group flex flex-col items-center justify-center h-full min-h-[44px] min-w-[44px] py-1 transition-all relative focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-neutral-900 ${
-                    isActive
+                    active
                       ? 'text-neutral-950 dark:text-white'
                       : 'text-neutral-500 dark:text-neutral-400 hover:text-neutral-800 dark:hover:text-neutral-200'
                   }`}
                 >
                   {/* Subtle active pill indicator line at top */}
-                  {isActive && (
+                  {active && (
                     <span className="absolute top-0 w-8 h-0.5 bg-neutral-950 dark:bg-white rounded-full transition-all" />
                   )}
 
                   <div
                     className={`p-1 rounded-lg transition-transform ${
-                      isActive ? 'scale-110' : 'group-hover:scale-105'
+                      active ? 'scale-110' : 'group-hover:scale-105'
                     }`}
                   >
                     <Icon className="w-5 h-5 transition-colors" />
@@ -68,12 +88,12 @@ export const Navigation: React.FC<NavigationProps> = ({ currentTab, onSelectTab 
 
                   <span
                     className={`text-[10px] tracking-tight truncate max-w-full px-0.5 mt-0.5 ${
-                      isActive ? 'font-semibold' : 'font-medium'
+                      active ? 'font-semibold' : 'font-medium'
                     }`}
                   >
                     {item.label}
                   </span>
-                </button>
+                </Link>
               );
             })}
           </div>
@@ -83,32 +103,32 @@ export const Navigation: React.FC<NavigationProps> = ({ currentTab, onSelectTab 
       {/* Desktop Top Header Bar for expansive 1440px presence with Brand Wordmark and active view */}
       <header className="hidden lg:block sticky top-0 z-30 bg-white/90 dark:bg-neutral-950/90 backdrop-blur-md border-b border-neutral-200 dark:border-neutral-800">
         <div className="max-w-7xl mx-auto px-8 h-16 flex items-center justify-between gap-8">
-          {/* Zone 1: Single text element wordmark */}
-          <div className="flex items-center gap-3 shrink-0">
-            <span className="font-serif text-xl font-bold tracking-tight text-neutral-900 dark:text-white">
+          {/* Zone 1: Single text element wordmark linking to home */}
+          <Link to="/bookshelf" className="flex items-center gap-3 shrink-0 focus:outline-none">
+            <span className="font-serif text-xl font-bold tracking-tight text-neutral-900 dark:text-white hover:opacity-90 transition-opacity">
               LifeNote AI
             </span>
-          </div>
+          </Link>
 
-          {/* Zone 2: The 6 Navigation items as clean text with subtle active state */}
+          {/* Zone 2: The 6 Navigation items as clean links with subtle active state */}
           <div className="flex items-center gap-1">
             {NAV_ITEMS.map((item) => {
               const Icon = item.icon;
-              const isActive = currentTab === item.key;
+              const active = isItemActive(item);
               return (
-                <button
+                <Link
                   key={item.key}
-                  type="button"
-                  onClick={() => onSelectTab(item.key)}
+                  to={item.path}
+                  onClick={() => handleItemClick(item.key)}
                   className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-medium transition-colors whitespace-nowrap shrink-0 ${
-                    isActive
+                    active
                       ? 'bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 shadow-xs'
                       : 'text-neutral-600 dark:text-neutral-300 hover:text-neutral-900 dark:hover:text-white hover:bg-neutral-100 dark:hover:bg-neutral-900'
                   }`}
                 >
                   <Icon className="w-4 h-4" />
                   <span>{item.label}</span>
-                </button>
+                </Link>
               );
             })}
           </div>
